@@ -14,7 +14,7 @@
 		//return eval(a);
 	};
 	
-	ext.opcao = function(channel, level) {
+	ext.opcao = function() {
 		
 		
 		//return eval(a);
@@ -24,7 +24,7 @@
 	var descriptor = {
 		blocks: [
 			['r', 'Set CH %n to level %n', 'opcaoA'],
-			[' ', 'Escolher a opção: %m.opçoes','opçao'],
+			['r', 'Escolher a opção: %m.opçoes','opçao'],
 			
 		],
 		
