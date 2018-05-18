@@ -8,17 +8,19 @@
 		return {status: 2, msg: 'Ready'};
 	};
 	
-	ext.opcaoA = function() {
+	ext.opcaoA = function(channel, level) {
+		
+		
 		//return eval(a);
 	};
 	var descriptor = {
 		blocks: [
-			['r', 'Set CH %m.channels to %m.level', 'opcaoA'],
+			['r', 'Set CH %n to level %n', 'opcaoA'],
 		],
 		
 		menus:{
-			"channels":	[1,2],
-			"level":	[0,127,255]
+			//"channels":	[1,2],
+			//"level":	[0,127,255]
 		}
 	};
 	ScratchExtensions.register("sACN extension", descriptor, ext);
