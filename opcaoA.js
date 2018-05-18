@@ -15,15 +15,15 @@
 	};
 	
 	ext.blackout = function() {
-		for (var i = 1; i <= numChannels; i++) {
+		/*for (var i = 1; i <= numChannels; i++) {
               DMXChannels[i]=0;
-		}
+		}*/
 		
 		//return eval(a);
 	};
 	
 	ext.opcaoA = function(opçaoEscolhida) {
-		opçao=opçaoEscolhida;
+		//opçao=opçaoEscolhida;
 		
 		//return eval(a);
 	};
