@@ -31,8 +31,8 @@
 	var descriptor = {
 		blocks: [
 			['r', 'Set CH %n to level %n', 'opcaoA'],
-			['', 'Blackout', 'blackout']
-			['', 'Escolher a opção: %m.opçoes','opçao', 'escolher opçao']
+			['', 'Blackout', 'blackout'],
+			['', 'Escolher a opção: %m.opçoes','opçao']
 		],
 		
 		menus:{
