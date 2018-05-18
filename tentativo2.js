@@ -31,7 +31,7 @@
 		menus:{
 			//"channels":	[1,2],
 			//"level":	[0,127,255]
-			"opçoes": [A: 2 CH Mode, B: 5 CH Mode, C: 29 CH Mode, Blackout, Exit]
+			"opçoes": ['A: 2 CH Mode', 'B: 5 CH Mode', 'C: 29 CH Mode', 'Blackout', 'Exit']
 		}
 	};
 	ScratchExtensions.register("sACN extension", descriptor, ext);
