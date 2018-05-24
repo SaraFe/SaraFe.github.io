@@ -113,10 +113,10 @@
     });
 	}
 	
-    /*ext.publish = function(){
-		
+    ext.publish = function(message){
+		console.log(message);
 	};
-	
+	/*
 	ext.subscribe = function(){
 		
 	}*/
@@ -126,7 +126,7 @@
         blocks: [
             [' ', 'mesh broadcast %s', 'broadcast'],
 			['R', 'Ligar-se ao MQTT broker %s na porta %n', 'connect_broker', 'test.mosquitto.org', '8080'], //porta de default: 8080, broker de default: test.mosquitto.org
-			//[' ', 'Publish', 'publish'],
+			[' ', 'Enviar uma mensagem %s', 'publish', 'escrever a mensagem'],
 			//[' ', 'Subscribe', 'subscribe'],
 		],
         url: 'http://technoboy10.tk/mesh'
