@@ -103,9 +103,6 @@
 			client = new Paho.MQTT.Client(broker, port,"LSSANTOS112123132");
 			console.log('Criação da conexão com o Broker MQTT');
 			
-					
-			
-		
 		},
 		
 	   dataType:'script'
@@ -114,7 +111,12 @@
 	}
 	
     ext.publish = function(message){
-		console.log(message);
+		//console.log(message);
+		
+		ext.send({ //preso da mesh2.0: https://github.com/bobbybee/mesh-2.0/blob/master/ext.js
+			type: "broadcast",
+			message: message
+		});
 	};
 	/*
 	ext.subscribe = function(){
@@ -126,7 +128,7 @@
         blocks: [
             [' ', 'mesh broadcast %s', 'broadcast'],
 			['R', 'Ligar-se ao MQTT broker %s na porta %n', 'connect_broker', 'test.mosquitto.org', '8080'], //porta de default: 8080, broker de default: test.mosquitto.org
-			[' ', 'Enviar uma mensagem %s', 'publish', 'escrever a mensagem'],
+			[' ', 'Enviar uma mensagem %s', 'publish', 'escrever a mensagem aqui'],
 			//[' ', 'Subscribe', 'subscribe'],
 		],
         url: 'http://technoboy10.tk/mesh'
