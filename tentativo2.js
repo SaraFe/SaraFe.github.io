@@ -9,7 +9,8 @@
 	};
 	
 	ext.opcaoA = function(channel, level) {
-		
+		console.log(channel);
+		console.log(level);
 		
 		//return eval(a);
 	};
