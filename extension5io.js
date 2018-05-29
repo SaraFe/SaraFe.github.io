@@ -115,7 +115,7 @@
 			url:'https://SaraFe.github.io/paho-mqtt.js',
 			data:null,
 			success: function(){
-				client = new Paho.MQTT.Client(broker, port, "LSSANTOS112123132");
+				client = new Paho.MQTT.Client(broker, port);
 				console.log('Criação da conexão com o Broker MQTT');
 				
 				client.connect({onSuccess: ajax_success_onConnect});
