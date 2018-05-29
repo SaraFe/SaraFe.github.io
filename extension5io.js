@@ -129,12 +129,12 @@
 	}
 	
     ext.publish = function(message){
-		//console.log(message);
+		console.log(message);
 		
-		ext.send({ //preso da mesh2.0: https://github.com/bobbybee/mesh-2.0/blob/master/ext.js
+		/*ext.send({ //preso da mesh2.0: https://github.com/bobbybee/mesh-2.0/blob/master/ext.js
 			type: "broadcast",
 			message: message
-		});
+		});*/
 	};
 	/*
 	ext.subscribe = function(){
