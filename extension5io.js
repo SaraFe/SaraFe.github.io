@@ -89,7 +89,7 @@
     };
 	
 	ext.connect_broker = function(broker, port){ //recebe como parameters o broker, ou seja o server ao  qual quer conectar-se. E a porta 
-		$.ajax({
+		/*$.ajax({
 
         async:false,
 		
@@ -107,7 +107,25 @@
 		
 	   dataType:'script'
 
-    });
+		});*/
+		
+		$.ajax({
+			async:false,	
+			type:'GET',
+			url:'https://SaraFe.github.io/paho-mqtt.js',
+			data:null,
+			success: function(){
+				client = new Paho.MQTT.Client(broker, port, mqttClientID);
+				console.log('Criação da conexão com o Broker MQTT');
+				
+				client.connect({onSuccess: ajax_success_onConnect});
+				connect_status_callback(1);
+			},
+
+		   dataType:'script'
+
+}); 
+		
 	}
 	
     ext.publish = function(message){
