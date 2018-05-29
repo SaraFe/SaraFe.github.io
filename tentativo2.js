@@ -24,7 +24,7 @@
 	
 	var descriptor = {
 		blocks: [
-			['r', 'Set CH %n to level %n', 'opcaoA'],
+			[' ', 'Set CH %n to level %n', 'opcaoA'],
 			['r', 'Escolher a opção: %m.opçoes','opçao'],
 			
 		],
